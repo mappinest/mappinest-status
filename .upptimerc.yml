@@ -2,7 +2,8 @@ owner: mappinest
 repo: mappinest-status
 
 secrets:
-  - TILES_API_URL
+  - RASTER_TILES_API_URL
+  - VECTOR_TILES_API_URL
   - STYLES_API_URL
 
 sites:
@@ -14,8 +15,12 @@ sites:
     url: https://mappinest.com/login
     icon: https://www.mappinest.com/icon.svg
 
-  - name: Tiles API
-    url: $TILES_API_URL
+  - name: Raster Tiles API
+    url: $RASTER_TILES_API_URL
+    icon: https://www.mappinest.com/icon.svg
+
+  - name: Vector Tiles API
+    url: $VECTOR_TILES_API_URL
     icon: https://www.mappinest.com/icon.svg
 
   - name: Styles API
