@@ -23,7 +23,7 @@ sites:
     url: $VECTOR_TILES_API_URL
     icon: https://www.mappinest.com/icon.svg
 
-  - name: Styles API
+  - name: Maps API
     url: $STYLES_API_URL
     icon: https://www.mappinest.com/icon.svg
 
