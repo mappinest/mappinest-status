@@ -1,0 +1,70 @@
+owner: mappinest
+repo: mappinest-status
+
+secrets:
+  - TILES_API_URL
+  - STYLES_API_URL
+
+sites:
+  - name: Mappinest Website
+    url: https://mappinest.com
+    icon: https://www.mappinest.com/icon.svg
+
+  - name: Studio / Console
+    url: https://mappinest.com/login
+    icon: https://www.mappinest.com/icon.svg
+
+  - name: Tiles API
+    url: $TILES_API_URL
+    icon: https://www.mappinest.com/icon.svg
+
+  - name: Styles API
+    url: $STYLES_API_URL
+    icon: https://www.mappinest.com/icon.svg
+
+status-website:
+  cname: status.mappinest.com
+  name: Mappinest
+  theme: light
+  logoUrl: https://www.mappinest.com/vector/logo.svg
+  faviconSvg: https://www.mappinest.com/icon.svg
+  introTitle: Mappinest Status
+  introMessage: Real-time status and uptime history for Mappinest services.
+  links:
+    - rel: stylesheet
+      href: https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap
+  js: |
+    document.addEventListener('click', function (e) {
+      var logo = e.target.closest('.logo');
+      if (logo) {
+        e.preventDefault();
+        window.location.href = 'https://www.mappinest.com';
+      }
+    });
+  css: |
+    body { font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif; background: #f1f5f9 !important; }
+    .logo { gap: 0.2rem !important; margin-right: 0 !important; padding: 0.66rem 0 !important; }
+    .logo img { height: 24px !important; width: 24px !important; margin-right: 0 !important; }
+    .logo div {
+      text-indent: -9999px !important;
+      overflow: hidden !important;
+      background-image: url(https://www.mappinest.com/vector/text.svg) !important;
+      background-repeat: no-repeat !important;
+      background-position: left center !important;
+      background-size: 105px 28px !important;
+      width: 105px !important;
+      height: 28px !important;
+      margin: 0 !important;
+    }
+    h1, h2, h3 { color: #0f172a !important; font-weight: 600; }
+    a { color: #0f172a !important; }
+    article { background: #ffffff !important; color: #171717 !important; }
+    footer { display: none !important; }
+    article { border: none !important; box-shadow: none !important; padding: 1.44rem 1.73rem; }
+    article .graph path,
+    article .graph polygon,
+    article .graph rect {
+      fill: #3b82f6 !important;
+      fill-opacity: 0.12 !important;
+      stroke: #3b82f6 !important;
+    }
