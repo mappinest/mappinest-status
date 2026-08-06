@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://status.mappinest.com/</loc></url>
+  <url><loc>https://status.mappinest.com/history/mappinest-website</loc></url>
+  <url><loc>https://status.mappinest.com/history/studio-console</loc></url>
+  <url><loc>https://status.mappinest.com/history/raster-tiles-api</loc></url>
+  <url><loc>https://status.mappinest.com/history/vector-tiles-api</loc></url>
+  <url><loc>https://status.mappinest.com/history/maps-api</loc></url>
+</urlset>
