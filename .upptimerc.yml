@@ -34,7 +34,7 @@ status-website:
   logoUrl: https://www.mappinest.com/vector/logo.svg
   faviconSvg: https://www.mappinest.com/icon.svg
   introTitle: Mappinest Status
-  introMessage: Real-time status and uptime history for Mappinest services.
+  introMessage: Real-time status and uptime history for Mappinest services. Tiles & Styles APIs run on AWS (us-east-1) · Website & Studio run on Vercel.
   links:
     - rel: stylesheet
       href: https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap
